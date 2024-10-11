@@ -1,0 +1,115 @@
+[gd_scene load_steps=13 format=3 uid="uid://dw5mnra07ak4l"]
+
+[ext_resource type="Material" uid="uid://ffap4fx0fv0" path="res://uvChecker.tres" id="1_mydhq"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_2ppxf"]
+material = ExtResource("1_mydhq")
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_8eqig"]
+material = ExtResource("1_mydhq")
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_sue7k"]
+material = ExtResource("1_mydhq")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qn58f"]
+material = ExtResource("1_mydhq")
+
+[sub_resource type="QuadMesh" id="QuadMesh_yxu65"]
+material = ExtResource("1_mydhq")
+
+[sub_resource type="PrismMesh" id="PrismMesh_5tpef"]
+material = ExtResource("1_mydhq")
+
+[sub_resource type="SphereMesh" id="SphereMesh_4eg3u"]
+material = ExtResource("1_mydhq")
+
+[sub_resource type="TextMesh" id="TextMesh_81ynb"]
+material = ExtResource("1_mydhq")
+text = "lorem
+ipso
+facto
+coitus
+interruptus"
+font_size = 30
+uppercase = true
+justification_flags = 0
+
+[sub_resource type="TorusMesh" id="TorusMesh_0t30c"]
+material = ExtResource("1_mydhq")
+
+[sub_resource type="TubeTrailMesh" id="TubeTrailMesh_22oyp"]
+material = ExtResource("1_mydhq")
+
+[sub_resource type="BoxMesh" id="BoxMesh_mvu6v"]
+
+[node name="PrimitiveUVcheck" type="Node3D"]
+
+[node name="BoxMesh" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("BoxMesh_2ppxf")
+
+[node name="CapsuleMesh" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("CapsuleMesh_8eqig")
+
+[node name="CylinderMesh" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("CylinderMesh_sue7k")
+
+[node name="PlaneMesh" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_qn58f")
+
+[node name="QuadMesh" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("QuadMesh_yxu65")
+
+[node name="PrismMesh" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PrismMesh_5tpef")
+
+[node name="SphereMesh" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("SphereMesh_4eg3u")
+
+[node name="TextMesh" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("TextMesh_81ynb")
+
+[node name="TorusMesh" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("TorusMesh_0t30c")
+
+[node name="TubeMesh" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("TubeTrailMesh_22oyp")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+visible = false
+material = ExtResource("1_mydhq")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+visible = false
+sides = 64
+material = ExtResource("1_mydhq")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+visible = false
+radial_segments = 64
+rings = 32
+material = ExtResource("1_mydhq")
+
+[node name="CSGTorus3D" type="CSGTorus3D" parent="."]
+sides = 64
+ring_sides = 32
+material = ExtResource("1_mydhq")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+visible = false
+mesh = SubResource("BoxMesh_mvu6v")
+material = ExtResource("1_mydhq")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="."]
+visible = false
+polygon = PackedVector2Array(-1, -1, -1, 1, 1, 1, 1, -1)
+material = ExtResource("1_mydhq")
